@@ -1,0 +1,41 @@
+{
+    "nodes":[
+        {"id":"li", "name":"Liam", "className":"male", "loaded":true},
+        {"id":"em", "name":"Emilyn", "className":"female", "loaded":true},
+                {"id":"em-1", "name":"Enrico", "className":"male", "loaded":true},
+                {"id":"em-2", "name":"Myrna", "className":"female", "loaded":true},
+                {"id":"em-3", "name":"Joylyn", "className":"female", "loaded":true},
+                    {"id":"em-3-1", "name":"JV", "className":"male", "loaded":true},
+                    
+        {"id":"ma", "name":"Mahar", "className":"male", "loaded":true},
+                {"id":"ma-1", "name":"Ben", "className":"male", "loaded":true},
+                {"id":"ma-2", "name":"Richie", "className":"female", "loaded":true},
+                {"id":"ma-3", "name":"Noah", "className":"male", "loaded":true},
+                    {"id":"ma-3-1", "name":"Patch", "className":"female", "loaded":true}
+        
+    ],
+    "links":[
+        {"id":"l1","from":"li", "to":"em", "className":"child"},
+        {"id":"l2","from":"li", "to":"ma", "className":"child"},
+        {"id":"l3","from":"ma", "to":"em", "className":"partner"},
+        
+        {"id":"l4","from":"ma", "to":"ma-1", "className":"child"},
+        {"id":"l5","from":"ma", "to":"ma-2", "className":"child"},
+        {"id":"l6","from":"ma-1", "to":"ma-2", "className":"partner"},
+        
+        {"id":"l7","from":"ma-3", "to":"ma-1", "className":"child"},
+        {"id":"l8","from":"ma-3", "to":"ma-2", "className":"child"},
+        
+        {"id":"l9","from":"em", "to":"em-1", "className":"child"},
+        {"id":"l10","from":"em", "to":"em-2", "className":"child"},
+        {"id":"l11","from":"em-1", "to":"em-2", "className":"partner"},
+        
+        {"id":"l12","from":"em-3", "to":"em-1", "className":"child"},
+        {"id":"l13","from":"em-3", "to":"em-2", "className":"child"},
+        
+        {"id":"l14","from":"em-3", "to":"em-3-1", "className":"partner"},
+        {"id":"l15","from":"ma-3", "to":"ma-3-1", "className":"partner"}
+        
+        
+    ]
+}
